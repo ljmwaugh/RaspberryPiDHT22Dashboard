@@ -28,7 +28,7 @@ If you haven't previously used any of the locations you will need to create a **
 
 ### Step 2 - Deploy a boilerplate
 
-Open up the Catalog using the top menu, then select Starter from the left menu.  Select the Internet of Things Platform Starter.  In the screen presented enter a name for your application - this needs to be a name that is unique to your application, so a good naming convention is to use your initials followed by a name that describes the purpose of the app or the solution name.  This will also form part of the URL for the application.
+Open up the Catalog using the top menu, then select Starter Kits from the left menu.  Select the Internet of Things Platform Starter.  In the screen presented enter a name for your application - this needs to be a name that is unique to your application, so a good naming convention is to use your initials followed by a name that describes the purpose of the app or the solution name.  This will also form part of the URL for the application.
 
 Next select the location and space you want to deploy the application into . Leave the Selected plan information at the default values then select the **Create** button.
 
