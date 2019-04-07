@@ -33,15 +33,15 @@ A new browser tab will open to the Node-RED start page. Proceed through the setu
 - The Node-RED Visual Programming Editor will open with a default flow.
 - On the left side is a palette of nodes that you can drag onto the flow.
 - You can wire nodes together to create a program.
-- The sample IoT Starter flow is not applicable to this workshop and can be deleted.
+- The sample IoT Starter flow is not applicable to this workshop and can be disabled.
 
 ![IoT Starter Flow 1](screenshots/IoTStarter-DeleteFlow1-a.png)
 
-- Click the **+** icon (7) to add a new tab.  Double Click on the **Flow 2** tab header (8). Rename this tab from **Flow 2** to Receive ESP8266 Data (9)
+- Click the **+** icon (7) to add a new tab.  Double Click on the **Flow 2** tab header (8). Rename this tab from **Flow 2** to Receive Raspberry Pi Data (9)
 
 ![IoT Starter Flow 1](screenshots/IoTStarter-DeleteFlow1-b.png)
 
-- Double Click on the **Flow 1** tab header (10).  Press the **Delete** button. (11)
+- Double Click on the **Flow 1** tab header (10).  Change the Status to Disabled and click Done. (11)
 
 ![IoT Starter Flow 1](screenshots/IoTStarter-DeleteFlow1-c.png)
 
