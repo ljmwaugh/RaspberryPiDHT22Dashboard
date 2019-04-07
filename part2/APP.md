@@ -33,8 +33,7 @@ Create a Node-RED flow to send environment data to the Internet of Things platfo
 ``` json
 {
   "d" : {
-    "temp" : temp,
-    "humidity" : hum
+    "temp" : temp
   }
 }
 ```
@@ -42,7 +41,7 @@ Create a Node-RED flow to send environment data to the Internet of Things platfo
 where temp and hum are numbers from the live environment data.
 
 ``` json
-[{"id":"373f7b35.f68ebc","type":"rpi-sensehat in","z":"25cbaaac.67ac06","name":"","motion":false,"env":true,"stick":false,"x":100,"y":380,"wires":[["5d0e843f.bfb37c"]]},{"id":"5d0e843f.bfb37c","type":"template","z":"25cbaaac.67ac06","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"{\"d\" : {\"temp\" : {{payload.temperature}} ,\n        \"humidity\" : {{payload.humidity}}\n        }\n}","output":"json","x":220,"y":420,"wires":[["ed0450be.1d666"]]},{"id":"ed0450be.1d666","type":"debug","z":"25cbaaac.67ac06","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","x":370,"y":440,"wires":[]}]
+[{"id":"9c4f14b7.2f1e58","type":"template","z":"2052228e.805f0e","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"{\"d\" : {\"temp\" : {{payload}}\n        }\n}","output":"json","x":440,"y":220,"wires":[["9af199e9.fb3378"]]},{"id":"9af199e9.fb3378","type":"debug","z":"2052228e.805f0e","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","x":610,"y":140,"wires":[]},{"id":"4695d081.10277","type":"inject","z":"2052228e.805f0e","name":"","topic":"","payload":"","payloadType":"date","repeat":"30","crontab":"","once":false,"onceDelay":0.1,"x":110,"y":220,"wires":[["286983e8.f2dfbc"]]},{"id":"286983e8.f2dfbc","type":"rpi-dht22","z":"2052228e.805f0e","name":"","topic":"rpi-dht22","dht":22,"pintype":"0","pin":4,"x":280,"y":220,"wires":[["9c4f14b7.2f1e58"]]}]
 ```
 
 As an additional step only send data to the IoT platform every 30 seconds, but ensure you send the latest data and discard the intermediate values.
