@@ -57,8 +57,8 @@ The next Node-RED flow - **Dashboard Intro** - uses a variety of UI widgets to d
 Now that you have learned about Node-RED Dashboard and Chart types, you are ready to plot the real-time environmental sensor data.
 
 - Turn to the next flow - **Plot DHT Sensor Data**
-- The **IBM IoT** node is already configured to receive *status* Device Events from the Raspberry Device Type.
-- The **Change** nodes extract the ```msg.payload.d.temp``` and ```msg.payload.d.humidity``` values from the JSON object sent over MQTT from the ESP8266 DHT sensor to Watson IoT Platform.
+- The **IBM IoT** node needs to be configured to receive *status* Device Events from the Raspberry Device Type.
+- The **Change** nodes extract the ```msg.payload.d.temp``` and ```msg.payload.d.humidity``` values from the JSON object sent over MQTT from the Raspberry Pi DHT sensor to Watson IoT Platform.
 - The environmental sensor values are sent to two charts to plot Temperature and Humidity.
  ![NRD ESP8266 DHT chart flow](screenshots/Node-RED-Dashboard-DHT-flow.png)
 - Turn to the Node-RED Dashboard browser tab that you launched in Step 2, click on the tab in the upper left corner, and select the **ESP8266 Workshop** tab.
