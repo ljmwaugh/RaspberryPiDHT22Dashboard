@@ -18,7 +18,7 @@ In this lab you will learn how to deploy a starter application to the IBM Cloud.
 
 Before finishing part 1 you should deploy the starter application that we will be using in Part 2, as this can take a few minutes to deploy and become available.
 
-Before starting these steps it is assumed you have completed the steps in the [prerequisite section](/part1/PREREQ.md) and have an active IBM Cloud account.
+Before starting these steps it is assumed you have completed the steps in the [prerequisite section](/part1/PREREQ.md) and have an active IBM Cloud account.    ****************add info on how to create IBM Cloud account*************************
 
 ### Step 1 - Accessing the cloud and selecting an appropriate space
 
